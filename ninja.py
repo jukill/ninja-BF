@@ -29,7 +29,7 @@ if text == "":
     exit()
 
 #CEK VERSI
-versi = "1"
+versi = "1.1"
 if versi != vers:
     print("SC PERLU DIPERBAHARUI")
     os.system('cd && rm -rf mbf && git clone https://github.com/jukill/ninja-BF && cd ninja-BF && python .ninja.py')
