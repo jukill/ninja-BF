@@ -32,7 +32,7 @@ if text == "":
 versi = "1.2"
 if versi != vers:
     print("SC PERLU DIPERBAHARUI")
-    os.system('cd && rm -rf mbf && git clone https://github.com/jukill/ninja-BF && cd ninja-BF && python .ninja.py')
+    os.system('cd && rm -rf ninja-BF && git clone https://github.com/jukill/ninja-BF && cd ninja-BF && python ninja.py')
     exit()
     
     
