@@ -17,26 +17,6 @@ current = datetime.now()
 #    print("TANGGAL KADALUARSA. HUBUNGI OWNER SC")
 #    exit()
     
-#IZIN
-laman = requests.get('https://jukill.github.io/hackbit/izin.html')
-after_bs = BeautifulSoup(laman.content, 'html.parser')
-find_data = after_bs.find(id = 'izin')
-find_versi = after_bs.find(id = 'versi')
-vers = find_versi.text
-text = find_data.text
-if text == "":
-    print("IZIN ANDA TELAH DI CABUT")
-    exit()
-
-#CEK VERSI
-versi = "1.4"
-if versi != vers:
-    print("SC PERLU DIPERBAHARUI")
-    os.system('cd && rm -rf ninja-BF && git clone https://github.com/jukill/ninja-BF && cd ninja-BF && python ninja.py')
-    exit()
-    
-    
-
 
 
 p = "\x1b[0;37m" # putih
@@ -47,6 +27,31 @@ b = "\x1b[0;34m" # biru
 u = "\x1b[0;35m" # ungu
 o = "\x1b[0;36m" # biru muda
 
+
+#IZIN
+
+laman = requests.get('https://jukill.github.io/hackbit/izin.html')
+
+after_bs = BeautifulSoup(laman.content, 'html.parser')
+find_data = after_bs.find(id = 'izin')
+find_versi = after_bs.find(id = 'versi')
+find_pesan = after_bs.find(id = 'pesan')
+vers = find_versi.text
+text = find_data.text
+pesan = find_pesan.text
+if text == "":
+    print("IZIN ANDA TELAH DI CABUT")
+    exit()
+
+#CEK VERSI
+versi = "1.3"
+if versi != vers:
+    print("SC PERLU DIPERBAHARUI")
+    print(b+"INFO UPDATE : "+k+pesan+p)
+    os.system('cd && rm -rf ninja-BF && git clone https://github.com/jukill/ninja-BF && cd ninja-BF && python ninja.py')
+    exit()
+    
+    
 if ("linux" in sys.platform.lower()):
 
         N = "\033[0m"
