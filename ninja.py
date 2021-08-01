@@ -196,7 +196,7 @@ def choose_country():
             menu()
         except (KeyError, IOError):
             menu()
-    elif cc in["0","05"]:
+    elif cc in["5","05"]:
         os.system("rm -rf country.txt")
         cou = " "
         try:
