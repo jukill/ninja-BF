@@ -43,7 +43,7 @@ if text == "":
     exit()
 
 #CEK VERSI
-versi = "1.6"
+versi = "1.7"
 if versi != vers:
     print("SC PERLU DIPERBAHARUI")
     print(b+"INFO UPDATE : "+k+pesan+p)
