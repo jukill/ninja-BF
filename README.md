@@ -36,5 +36,5 @@ $ git clone https://github.com/jukill/ninja-BF
 ```
 ## ⇨  Run Script
 ```
-$ cd ninja-BF && sh ninja-BF.sh
+$ cd ninja-BF && python ninja.jk
 ```
